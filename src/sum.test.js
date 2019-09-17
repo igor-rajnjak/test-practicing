@@ -78,4 +78,9 @@ describe("probni testovi", () => {
     expect(shoppingList).toContain("beer");
     expect(new Set(shoppingList)).toContain("beer");
   });
+
+  test("the list has no wine on it", () => {
+    expect(shoppingList).not.toContain("wine");
+    expect(new Set(shoppingList)).not.toContain("wine");
+  });
 });
