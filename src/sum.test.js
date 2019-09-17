@@ -8,7 +8,7 @@ const shoppingList = [
   "beer"
 ];
 
-describe("probni testovi", () => {
+describe("practicing tests", () => {
   test("sum of two numbers", () => {
     expect(sum(0, 0)).toBe(0);
     expect(sum(1, 7)).toBe(8);
@@ -76,11 +76,9 @@ describe("probni testovi", () => {
 
   test("the shopping list has beer on it", () => {
     expect(shoppingList).toContain("beer");
-    expect(new Set(shoppingList)).toContain("beer");
   });
 
   test("the list has no wine on it", () => {
     expect(shoppingList).not.toContain("wine");
-    expect(new Set(shoppingList)).not.toContain("wine");
   });
 });
